@@ -28,12 +28,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/toDetailsActivityButton"
+        android:id="@+id/showResultsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
-        android:text="@string/to_details"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="@string/show_results"
         app:layout_constraintTop_toBottomOf="@id/searchEditText" />
+
+    <Button
+        android:id="@+id/toDetailsActivityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:text="@string/to_details"
+        app:layout_constraintTop_toBottomOf="@id/showResultsButton" />
 
     <TextView
         android:id="@+id/totalCountTextView"
